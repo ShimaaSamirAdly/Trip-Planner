@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="project.iti.UI.Login.LoginActivity">
+
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/login_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/twenty_dp"
+        android:textSize="@dimen/activity_vertical_margin"
+        android:text="@string/or"/>
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etEmail"
+        android:hint="Email"
+        android:textColor="@color/white"
+        app:met_iconLeft="@drawable/email"
+        android:textSize="20sp"
+        android:layout_marginRight="@dimen/bottom_text_size"
+        android:layout_marginLeft="@dimen/bottom_text_size"
+        android:paddingLeft="@dimen/bottom_text_size"
+        app:met_floatingLabel="highlight"
+        app:met_maxCharacters="30"
+        android:inputType="textWebEmailAddress"
+        app:met_baseColor="@color/cardview_shadow_end_color"
+        app:met_primaryColor="?colorAccent"
+        app:met_singleLineEllipsis="true" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etPass"
+        android:hint="Password"
+        app:met_iconLeft="@drawable/pass"
+        android:textSize="20sp"
+        android:inputType="textPassword"
+        android:layout_marginRight="@dimen/bottom_text_size"
+        android:layout_marginLeft="@dimen/bottom_text_size"
+        android:paddingLeft="@dimen/bottom_text_size"
+        app:met_floatingLabel="highlight"
+        app:met_maxCharacters="30"
+        app:met_baseColor="@color/cardview_shadow_end_color"
+        app:met_primaryColor="?colorAccent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/tvError"
+        android:visibility="gone"
+        android:textColor="@android:color/holo_red_light"
+        android:text="@string/loginError"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/btnLogin"
+        android:text="@string/Login"
+        android:textSize="@dimen/activity_vertical_margin"
+        android:layout_height="wrap_content"
+        android:textColor="#cccccc"
+        android:background="#32384d"
+        android:layout_margin="@dimen/activity_vertical_margin"
+        />
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/tvSignUp"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:textSize="@dimen/activity_vertical_margin"-->
+        <!--android:layout_margin="@dimen/activity_vertical_margin"-->
+        <!--android:textColor="@color/white"-->
+        <!--android:text="@string/signUp"/>-->
+    <!--<ImageView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/img"/>-->
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal">-->
+
+
+        <!--<FrameLayout-->
+        <!--android:id="@+id/framelayout_faceebok"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/tvLogin"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginBottom="@dimen/ten_dp">-->
+
+        <!--&lt;!&ndash;<com.facebook.login.widget.LoginButton&ndash;&gt;-->
+            <!--&lt;!&ndash;android:id="@+id/login_button"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_gravity="center_horizontal"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_marginTop="30dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:visibility="gone"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_marginBottom="30dp" />&ndash;&gt;-->
+
+    <!--</FrameLayout>-->
+
+        <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_gravity="center"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:text="@string/or"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:textColor="@color/white"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:textSize="@dimen/activity_vertical_margin" />&ndash;&gt;-->
+
+        <!--&lt;!&ndash;<ImageView&ndash;&gt;-->
+            <!--&lt;!&ndash;android:id="@+id/iv_fb_icon"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="75dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_marginEnd="16dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_weight="1"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:src="@drawable/fb" />&ndash;&gt;-->
+
+    <!--</LinearLayout>-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvSignUp"
+        android:layout_gravity="center"
+        android:textSize="@dimen/fifteen_dp"
+        android:layout_margin="@dimen/activity_vertical_margin"
+        android:text="@string/signUp"/>
+
+
+</LinearLayout>
+</ScrollView>

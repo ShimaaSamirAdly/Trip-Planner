@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <RelativeLayout android:id="@+id/frame"
+    android:orientation="horizontal"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <project.iti.UI.Intro.DynamicViewPager
+        android:id="@+id/pager"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+    </project.iti.UI.Intro.DynamicViewPager>
+
+    <RelativeLayout android:id="@+id/re3"
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="1dp"
+        android:paddingRight="30dp"
+        android:paddingLeft="30dp"
+        android:paddingBottom="3dp">
+
+        <Button
+            android:id="@+id/skip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@color/introColor"
+            android:gravity="center"
+            android:text="Skip"
+            android:textColor="@android:color/white" />
+
+
+</RelativeLayout>
+
+    <!-- android:layout_above="@+id/re3" -->
+
+    <RelativeLayout android:id="@+id/point"
+        android:orientation="horizontal"
+        android:layout_height="40dp"
+        android:layout_width="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_above="@+id/re3"
+        android:gravity="center">
+
+    <ImageView android:id="@+id/second"
+        android:layout_height="12dp"
+        android:layout_width="12dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignTop="@+id/first"
+        android:src="@drawable/unselected"
+        android:layout_marginRight="5dp"/>
+
+    <ImageView android:id="@+id/first"
+        android:layout_height="12dp"
+        android:layout_width="12dp"
+        android:src="@drawable/unselected"
+        android:layout_marginRight="5dp"
+        android:layout_toStartOf="@+id/second"
+        android:layout_toLeftOf="@+id/second"
+        android:layout_alignParentTop="true"/>
+
+    <ImageView android:id="@+id/third"
+        android:layout_height="12dp"
+        android:layout_width="12dp"
+        android:src="@drawable/unselected"
+        android:layout_marginRight="5dp"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/second"
+        android:layout_toRightOf="@+id/second"/>
+
+    <ImageView android:id="@+id/fourth"
+        android:layout_height="12dp"
+        android:layout_width="12dp"
+        android:layout_alignTop="@+id/third"
+        android:src="@drawable/unselected"
+        android:layout_toEndOf="@+id/third"
+        android:layout_toRightOf="@+id/third"/>
+
+</RelativeLayout>
+
+</RelativeLayout>

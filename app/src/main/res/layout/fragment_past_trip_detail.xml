@@ -1,0 +1,558 @@
+<!--<<<<<<< HEAD-->
+<!--<ScrollView android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--xmlns:tools="http://schemas.android.com/tools">-->
+    <!--<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+
+        <!--android:id="@+id/linearLayout"-->
+
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:weightSum="10"-->
+        <!--tools:context="project.iti.UI.DetailPastTrip.PastTripDetailFragment"-->
+        <!--tools:layout_editor_absoluteY="81dp">-->
+        <!--&lt;!&ndash; TODO: Update blank fragment layout &ndash;&gt;-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/imageView4_detail_past"-->
+            <!--android:layout_width="374dp"-->
+            <!--android:layout_height="197dp"-->
+            <!--android:scaleType="fitXY"-->
+            <!--android:src="@drawable/ic_launcher_background"-->
+            <!--app:layout_constraintEnd_toEndOf="parent"-->
+            <!--app:layout_constraintHorizontal_bias="0.506"-->
+            <!--app:layout_constraintStart_toStartOf="parent"-->
+            <!--app:layout_constraintTop_toTopOf="parent" />-->
+
+
+        <!--<TextView-->
+            <!--android:id="@+id/text_view_detail_tName_detail_past"-->
+            <!--android:layout_width="197dp"-->
+            <!--android:layout_height="47dp"-->
+            <!--android:layout_marginStart="8dp"-->
+            <!--android:layout_marginTop="16dp"-->
+            <!--android:textSize="12sp"-->
+            <!--app:layout_constraintBaseline_toBaselineOf="@+id/textView_detail_status_detail_past"-->
+            <!--app:layout_constraintStart_toStartOf="parent"-->
+            <!--app:layout_constraintTop_toBottomOf="@+id/imageView4_detail_past"-->
+            <!--tools:text="TName:"-->
+            <!--tools:textSize="30sp" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/text_view_detail_start_point_detail_past"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="41dp"-->
+            <!--android:layout_marginEnd="8dp"-->
+            <!--android:layout_marginTop="8dp"-->
+            <!--android:textSize="12sp"-->
+            <!--app:layout_constraintEnd_toEndOf="@+id/text_view_detail_tName_detail_past"-->
+            <!--app:layout_constraintHorizontal_bias="0.0"-->
+            <!--app:layout_constraintStart_toStartOf="@+id/text_view_detail_tName_detail_past"-->
+            <!--app:layout_constraintTop_toBottomOf="@+id/text_view_detail_tName_detail_past"-->
+            <!--tools:text="Start Point :"-->
+            <!--tools:textSize="30sp" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/text_view_detail_end_point_detail_past"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginEnd="8dp"-->
+            <!--android:layout_marginTop="8dp"-->
+            <!--android:textSize="12sp"-->
+            <!--app:layout_constraintEnd_toEndOf="@+id/text_view_detail_start_point_detail_past"-->
+            <!--app:layout_constraintStart_toStartOf="@+id/text_view_detail_start_point_detail_past"-->
+            <!--app:layout_constraintTop_toBottomOf="@+id/text_view_detail_start_point_detail_past"-->
+            <!--tools:text="End Point :"-->
+            <!--tools:textSize="30sp" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/text_view_detail_date_detail_past"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginEnd="8dp"-->
+            <!--android:layout_marginTop="16dp"-->
+            <!--android:textSize="12sp"-->
+            <!--app:layout_constraintEnd_toEndOf="@+id/text_view_detail_end_point_detail_past"-->
+            <!--app:layout_constraintHorizontal_bias="0.9"-->
+            <!--app:layout_constraintStart_toStartOf="@+id/text_view_detail_end_point_detail_past"-->
+            <!--app:layout_constraintTop_toBottomOf="@+id/text_view_detail_end_point_detail_past"-->
+            <!--tools:text="Date :"-->
+            <!--tools:textSize="30sp" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/text_view_detail_time_detail_past"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="24dp"-->
+            <!--android:textSize="12sp"-->
+            <!--app:layout_constraintEnd_toEndOf="@+id/text_view_detail_date_detail_past"-->
+            <!--app:layout_constraintHorizontal_bias="0.0"-->
+            <!--app:layout_constraintStart_toStartOf="@+id/text_view_detail_date_detail_past"-->
+            <!--app:layout_constraintTop_toBottomOf="@+id/text_view_detail_date_detail_past"-->
+            <!--tools:text="Time :"-->
+            <!--tools:textSize="30sp" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/text_view_detail_type_detail_past"-->
+            <!--android:layout_width="127dp"-->
+            <!--android:layout_height="44dp"-->
+            <!--android:layout_marginEnd="8dp"-->
+            <!--android:layout_marginTop="8dp"-->
+            <!--android:textSize="12sp"-->
+            <!--app:layout_constraintEnd_toEndOf="@+id/text_view_detail_time_detail_past"-->
+            <!--app:layout_constraintHorizontal_bias="0.01"-->
+            <!--app:layout_constraintStart_toStartOf="@+id/text_view_detail_time_detail_past"-->
+            <!--app:layout_constraintTop_toBottomOf="@+id/text_view_detail_time_detail_past"-->
+            <!--tools:text="Type:"-->
+            <!--tools:textSize="30sp" />-->
+
+        <!--<Button-->
+            <!--android:id="@+id/button_show_notes_detail_past"-->
+            <!--android:layout_width="219dp"-->
+            <!--android:layout_height="45dp"-->
+            <!--android:layout_marginEnd="68dp"-->
+            <!--android:layout_marginStart="8dp"-->
+            <!--android:layout_marginTop="24dp"-->
+            <!--android:text="View Notes"-->
+            <!--app:layout_constraintEnd_toEndOf="parent"-->
+            <!--app:layout_constraintHorizontal_bias="0.94"-->
+            <!--app:layout_constraintStart_toStartOf="parent"-->
+            <!--app:layout_constraintTop_toBottomOf="@+id/text_view_detail_type_detail_past" />-->
+
+        <!--<Button-->
+            <!--android:id="@+id/button_detail_delete_detail_past"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginBottom="8dp"-->
+            <!--android:layout_marginEnd="16dp"-->
+            <!--android:layout_marginStart="8dp"-->
+            <!--android:layout_marginTop="32dp"-->
+            <!--android:text="DELETE"-->
+            <!--app:layout_constraintBottom_toBottomOf="parent"-->
+            <!--app:layout_constraintEnd_toEndOf="parent"-->
+            <!--app:layout_constraintHorizontal_bias="1.0"-->
+            <!--app:layout_constraintStart_toEndOf="@+id/button_show_notes_detail_past"-->
+            <!--app:layout_constraintTop_toBottomOf="@+id/button_show_notes_detail_past"-->
+            <!--app:layout_constraintVertical_bias="0.0" />-->
+
+
+        <!--<TextView-->
+            <!--android:id="@+id/textView_detail_status_detail_past"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginEnd="8dp"-->
+            <!--android:layout_marginStart="8dp"-->
+            <!--android:layout_marginTop="16dp"-->
+            <!--android:text="TextView"-->
+            <!--android:textSize="14sp"-->
+            <!--app:layout_constraintEnd_toEndOf="parent"-->
+            <!--app:layout_constraintHorizontal_bias="0.112"-->
+            <!--app:layout_constraintStart_toEndOf="@+id/text_view_detail_tName_detail_past"-->
+            <!--app:layout_constraintTop_toBottomOf="@+id/imageView4_detail_past"-->
+            <!--tools:text="Status :"-->
+            <!--tools:textSize="30sp" />-->
+
+
+        <!--<ImageView-->
+            <!--android:id="@+id/imageView5_detail_past"-->
+            <!--android:layout_width="374dp"-->
+            <!--android:layout_height="197dp"-->
+            <!--android:layout_marginEnd="8dp"-->
+            <!--android:layout_marginStart="8dp"-->
+            <!--android:layout_marginTop="8dp"-->
+            <!--android:scaleType="fitXY"-->
+            <!--android:src="@drawable/ic_launcher_background"-->
+            <!--app:layout_constraintEnd_toEndOf="parent"-->
+            <!--app:layout_constraintStart_toStartOf="parent"-->
+            <!--app:layout_constraintTop_toBottomOf="@+id/button_detail_delete_detail_past" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/textView_past_detail_duration"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginEnd="8dp"-->
+            <!--android:layout_marginTop="12dp"-->
+            <!--android:text="TextView"-->
+            <!--app:layout_constraintBaseline_toBaselineOf="@+id/text_view_detail_start_point_detail_past"-->
+            <!--app:layout_constraintEnd_toEndOf="parent"-->
+            <!--app:layout_constraintHorizontal_bias="0.0"-->
+            <!--app:layout_constraintStart_toStartOf="@+id/textView_detail_status_detail_past"-->
+            <!--app:layout_constraintTop_toBottomOf="@+id/textView_detail_status_detail_past"-->
+            <!--tools:text="Duration :"-->
+            <!--tools:textSize="30sp" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/textView_past_detail_avgSpeed"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginEnd="8dp"-->
+            <!--android:layout_marginTop="8dp"-->
+            <!--android:text="TextView"-->
+            <!--app:layout_constraintBaseline_toBaselineOf="@+id/text_view_detail_end_point_detail_past"-->
+            <!--app:layout_constraintEnd_toEndOf="parent"-->
+            <!--app:layout_constraintStart_toStartOf="@+id/textView_past_detail_duration"-->
+            <!--app:layout_constraintTop_toBottomOf="@+id/textView_past_detail_duration"-->
+            <!--tools:text="Avg Speed :"-->
+            <!--tools:textSize="30sp" />-->
+    <!--</android.support.constraint.ConstraintLayout>-->
+
+<!--</ScrollView>-->
+<!--=======-->
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+
+android:id="@+id/linearLayout"
+
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+
+tools:context="project.iti.UI.DetailTrip.UpComingTripDetailFragment"
+
+android:background="#32384d">
+
+
+<ImageView
+    android:layout_margin="10dp"
+    android:id="@+id/imageView4_detail_past"
+    android:layout_width="374dp"
+    android:layout_height="140dp"
+    android:layout_marginTop="20dp"
+    android:scaleType="fitXY"
+    android:src="@drawable/defaultdetail"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+
+    <TextView
+        android:id="@+id/text_view_detail_tName_detail_past"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.453"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4_detail_past"
+        tools:text="TName:" />
+
+    <TextView
+        android:id="@+id/text_view_detail_start_point_detail_past"
+        android:layout_width="122dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/textView_detail_status_detail_past"
+        tools:text="Start Point :" />
+
+    <TextView
+        android:id="@+id/text_view_detail_end_point_detail_past"
+        android:layout_width="118dp"
+        android:layout_height="17dp"
+        android:layout_marginTop="24dp"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textView_detail_status_detail_past"
+        app:layout_constraintTop_toBottomOf="@+id/textView_detail_status_detail_past"
+        tools:text="End Point :"
+        tools:textSize="12sp" />
+
+<TextView
+    android:id="@+id/text_view_detail_date_detail_past"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="8dp"
+    android:layout_marginTop="8dp"
+    android:textSize="12sp"
+
+    android:textColor="@color/white"
+    app:layout_constraintEnd_toEndOf="@+id/text_view_detail_start_point_detail_past"
+    app:layout_constraintHorizontal_bias="0.13"
+    app:layout_constraintStart_toStartOf="@+id/text_view_detail_start_point_detail_past"
+    app:layout_constraintTop_toBottomOf="@+id/text_view_detail_start_point_detail_past"
+    tools:text="Date :"
+    tools:textSize="12sp" />
+
+<TextView
+    android:id="@+id/text_view_detail_time_detail_past"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:textColor="@color/white"
+    android:textSize="12sp"
+    app:layout_constraintEnd_toEndOf="@+id/text_view_detail_end_point_detail_past"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="@+id/text_view_detail_end_point_detail_past"
+    app:layout_constraintTop_toBottomOf="@+id/text_view_detail_end_point_detail_past"
+    tools:text="Time :"
+    tools:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/text_view_detail_type_detail_past"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/text_view_detail_date_detail_past"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/text_view_detail_date_detail_past"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_detail_date_detail_past"
+        tools:text="Type:"
+        tools:textSize="12sp" />
+
+    <Button
+        android:id="@+id/button_show_notes_detail_past"
+        android:layout_width="96dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="28dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="40dp"
+        android:background="#cccccc"
+        android:textColor="@color/colorPrimaryDark"
+
+        android:text="View Notes"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textView15"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/button_detail_past_show_map"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_detail_type_detail_past" />
+
+    <Button
+        android:id="@+id/button_detail_delete_detail_past"
+        android:layout_width="83dp"
+        android:layout_height="47dp"
+        android:layout_marginBottom="27dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="40dp"
+        android:background="#cccccc"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="Delete"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/text_view_past_detail_trip_mode"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/button_show_notes_detail_past"
+        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+    <Button
+        android:id="@+id/button_detail_past_show_map"
+        android:layout_width="83dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="24dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:background="#cccccc"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="Show Map"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textView14"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="@+id/textView14"
+        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+    <TextView
+        android:id="@+id/textView_detail_status_detail_past"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:text="TextView"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_detail_tName_detail_past"
+        tools:text="Status :"
+        tools:textSize="12sp" />
+
+<TextView
+    android:id="@+id/text_view_past_detail_trip_mode"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:text="TextView"
+    android:textColor="@color/white"
+    android:textSize="12sp"
+    app:layout_constraintEnd_toEndOf="@+id/text_view_detail_time_detail_past"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="@+id/text_view_detail_time_detail_past"
+    app:layout_constraintTop_toBottomOf="@+id/text_view_detail_time_detail_past"
+    tools:text="Mode :"
+    tools:textSize="12sp" />
+
+<TextView
+    android:id="@+id/textView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="8dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="32dp"
+    android:text="Trip Details"
+    android:textColor="@color/white"
+    android:textSize="@dimen/twenty_five_dp"
+    android:textStyle="bold"
+
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+    android:id="@+id/textView6"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="44dp"
+    android:text="From : "
+    android:textColor="@color/white"
+    android:textSize="12sp"
+    app:layout_constraintBaseline_toBaselineOf="@+id/text_view_detail_start_point_detail_past"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/textView_detail_status_detail_past" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="64dp"
+        android:text="To :"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/text_view_detail_end_point_detail_past"
+        app:layout_constraintHorizontal_bias="0.68"
+        app:layout_constraintStart_toEndOf="@+id/textView_detail_status_detail_past"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_detail_tName_detail_past" />
+
+<TextView
+    android:id="@+id/textView9"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="28dp"
+    android:text="Date : "
+    android:textSize="12sp"
+    android:textColor="@color/white"
+    app:layout_constraintBaseline_toBaselineOf="@+id/text_view_detail_date_detail_past"
+    app:layout_constraintEnd_toEndOf="@+id/textView6"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="@+id/textView6"
+    app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+<TextView
+    android:id="@+id/textView10"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:text="Time : "
+    android:textColor="@color/white"
+    android:textSize="12sp"
+    app:layout_constraintBaseline_toBaselineOf="@+id/text_view_detail_time_detail_past"
+    app:layout_constraintEnd_toEndOf="@+id/textView8"
+    app:layout_constraintHorizontal_bias="0.34"
+    app:layout_constraintStart_toStartOf="@+id/textView8"
+    app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+<TextView
+    android:id="@+id/textView14"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="16dp"
+    android:layout_marginTop="24dp"
+    android:text="Direction : "
+    android:textColor="@color/white"
+    android:textSize="12sp"
+    app:layout_constraintBaseline_toBaselineOf="@+id/text_view_detail_type_detail_past"
+    app:layout_constraintEnd_toEndOf="@+id/textView9"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="@+id/textView9"
+    app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+<TextView
+    android:id="@+id/textView15"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="8dp"
+    android:layout_marginTop="8dp"
+    android:text="Mode : "
+    android:textColor="@color/white"
+    android:textSize="12sp"
+    app:layout_constraintEnd_toEndOf="@+id/textView10"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="@+id/textView10"
+    app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Duration :"
+        android:textColor="@color/white"
+        android:textSize="@dimen/tweleve_sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/text_view_past_trip_detail_duration"
+        app:layout_constraintEnd_toEndOf="@+id/textView14"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView14"
+        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+    <TextView
+        android:id="@+id/text_view_past_trip_detail_duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/tweleve_sp"
+        app:layout_constraintEnd_toEndOf="@+id/text_view_detail_type_detail_past"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_detail_type_detail_past"
+        tools:text="Duration" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="AVG Speed : "
+        android:textColor="@color/white"
+        android:textSize="@dimen/tweleve_sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/text_view_past_trip_detail_speed"
+        app:layout_constraintEnd_toEndOf="@+id/textView15"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView15"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_past_detail_trip_mode" />
+
+    <TextView
+        android:id="@+id/text_view_past_trip_detail_speed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="10dp"
+        android:text="avg speed"
+        android:textColor="@color/white"
+        android:textSize="@dimen/tweleve_sp"
+        app:layout_constraintEnd_toEndOf="@+id/text_view_past_detail_trip_mode"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textView15"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_past_detail_trip_mode" />
+
+</android.support.constraint.ConstraintLayout>
+

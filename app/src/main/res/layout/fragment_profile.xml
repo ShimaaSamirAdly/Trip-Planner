@@ -1,0 +1,85 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="project.iti.UI.Profile.ProfileFragment">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:src="@drawable/profile"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="5dp" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/bottom_text_size"
+        android:layout_marginRight="@dimen/bottom_text_size"
+        android:hint="Name"
+        android:inputType="text"
+        android:paddingLeft="@dimen/bottom_text_size"
+        android:textSize="20sp"
+        app:met_baseColor="@color/cardview_shadow_end_color"
+        app:met_floatingLabel="highlight"
+        app:met_iconLeft="@drawable/name"
+        app:met_maxCharacters="30"
+        app:met_primaryColor="?colorAccent"
+        app:met_singleLineEllipsis="true" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/bottom_text_size"
+        android:layout_marginRight="@dimen/bottom_text_size"
+        android:hint="Email"
+        android:inputType="textWebEmailAddress"
+        android:paddingLeft="@dimen/bottom_text_size"
+        android:enabled="false"
+        android:textSize="20sp"
+        app:met_baseColor="@color/cardview_shadow_end_color"
+        app:met_floatingLabel="highlight"
+        app:met_iconLeft="@drawable/email"
+        app:met_maxCharacters="30"
+        app:met_primaryColor="?colorAccent"
+        app:met_singleLineEllipsis="true" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/bottom_text_size"
+        android:layout_marginRight="@dimen/bottom_text_size"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingLeft="@dimen/bottom_text_size"
+        android:textSize="20sp"
+        app:met_baseColor="@color/cardview_shadow_end_color"
+        app:met_floatingLabel="highlight"
+        app:met_iconLeft="@drawable/pass"
+        app:met_maxCharacters="30"
+        app:met_primaryColor="?colorAccent"
+        app:met_singleLineEllipsis="true" />
+
+    <Button
+        android:id="@+id/saveBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/activity_vertical_margin"
+        android:onClick="save"
+        android:background="#32384d"
+        android:textColor="#cccccc"
+        android:text="@string/saveBtn"
+        android:textSize="@dimen/activity_vertical_margin"
+        tools:ignore="OnClick" />
+
+</LinearLayout>

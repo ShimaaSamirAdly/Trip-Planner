@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/constrain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteY="81dp"
+        android:background="#32384d">
+
+
+        <TextView
+            android:id="@+id/textView_trip_name_ef"
+            android:layout_width="72dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="72dp"
+            android:text="Trip Name :"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/editText_trip_name_ef"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editText_trip_name_ef"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toTopOf="@+id/spinner_ef"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.228"
+            app:layout_constraintStart_toEndOf="@+id/textView_trip_name_ef"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <Spinner
+            android:id="@+id/spinner_ef"
+            android:layout_width="187dp"
+            android:layout_height="35dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="32dp"
+            android:entries="@array/trip_type"
+            android:prompt="@string/country_prompt"
+            app:layout_constraintEnd_toEndOf="@+id/editText_trip_name_ef"
+            app:layout_constraintHorizontal_bias="0.2"
+            app:layout_constraintStart_toStartOf="@+id/editText_trip_name_ef"
+            app:layout_constraintTop_toBottomOf="@+id/textView_trip_name_ef" />
+
+
+        <TextView
+            android:id="@+id/textView_start_point_ef"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginBottom="53dp"
+            android:layout_marginTop="108dp"
+            android:text="Start Point :"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toTopOf="@+id/textView_trip_name_ef"
+            app:layout_constraintEnd_toEndOf="@+id/textView_trip_name_ef"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textView_trip_name_ef"
+            app:layout_constraintTop_toBottomOf="@+id/textView_trip_name_ef"
+            app:layout_constraintVertical_bias="0.0" />
+
+
+        <fragment
+            android:id="@+id/frag_start_point_ef"
+            android:name="com.google.android.gms.location.places.ui.SupportPlaceAutocompleteFragment"
+            android:layout_width="297dp"
+            android:layout_height="23dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="40dp"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="@+id/spinner_ef"
+            app:layout_constraintHorizontal_bias="0.166"
+            app:layout_constraintStart_toStartOf="@+id/spinner_ef"
+            app:layout_constraintTop_toBottomOf="@+id/spinner_ef" />
+
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="50dp"
+            android:text="End Point :"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/textView_start_point_ef"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textView_start_point_ef"
+            app:layout_constraintTop_toBottomOf="@+id/textView_start_point_ef" />
+
+        <fragment
+            android:id="@+id/frag_end_point_ef"
+            android:name="com.google.android.gms.location.places.ui.SupportPlaceAutocompleteFragment"
+            android:layout_width="297dp"
+            android:layout_height="20dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="44dp"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="@+id/frag_start_point_ef"
+            app:layout_constraintHorizontal_bias="0.421"
+            app:layout_constraintStart_toStartOf="@+id/frag_start_point_ef"
+            app:layout_constraintTop_toBottomOf="@+id/frag_start_point_ef" />
+
+
+        <Button
+
+            android:id="@+id/button_select_date_ef"
+            android:layout_width="127dp"
+            android:layout_height="44dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="63dp"
+            android:background="#cccccc"
+            android:textColor="@color/colorPrimaryDark"
+            android:text=" Select Date :"
+            app:layout_constraintBaseline_toBaselineOf="@+id/text_view_date_ef"
+            app:layout_constraintEnd_toEndOf="@+id/textView3"
+            app:layout_constraintHorizontal_bias="0.445"
+            app:layout_constraintStart_toStartOf="@+id/textView3"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+
+        <TextView
+            android:id="@+id/text_view_date_ef"
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="84dp"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/frag_end_point_ef"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/frag_end_point_ef"
+            app:layout_constraintTop_toBottomOf="@+id/frag_end_point_ef"
+            tools:text="datedate" />
+
+
+        <Button
+            android:id="@+id/button_select_time_ef"
+            android:layout_width="127dp"
+            android:layout_height="44dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:background="#cccccc"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="Select Time :"
+
+            app:layout_constraintBaseline_toBaselineOf="@+id/text_view_time_ef"
+            app:layout_constraintEnd_toEndOf="@+id/button_select_date_ef"
+            app:layout_constraintHorizontal_bias="0.51"
+            app:layout_constraintStart_toStartOf="@+id/button_select_date_ef"
+            app:layout_constraintTop_toBottomOf="@+id/button_select_date_ef" />
+
+
+        <TextView
+            android:id="@+id/text_view_time_ef"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="111dp"
+            android:layout_marginTop="32dp"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/text_view_date_ef"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/text_view_date_ef"
+            app:layout_constraintTop_toBottomOf="@+id/text_view_date_ef"
+            app:layout_constraintVertical_bias="0.102"
+            tools:text="time time" />
+
+        <Spinner
+            android:id="@+id/spinner_edit_repeation_option"
+            android:layout_width="163dp"
+            android:layout_height="22dp"
+
+            android:layout_marginEnd="72dp"
+            android:layout_marginTop="48dp"
+            android:entries="@array/repeat_option"
+            android:prompt="@string/repeation_option"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/text_view_time_ef"
+            app:layout_constraintTop_toBottomOf="@+id/text_view_time_ef" />
+
+        <Button
+            android:id="@+id/button_edit_note_ef"
+            android:layout_width="160dp"
+            android:layout_height="44dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="32dp"
+            android:background="#cccccc"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="Edit Notes"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinner_edit_repeation_option" />
+
+
+        <Button
+            android:id="@+id/button_save_changes_ef"
+            android:layout_width="160dp"
+            android:layout_height="44dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="16dp"
+            android:background="#cccccc"
+            android:text="Save Changes"
+            android:textColor="@color/colorPrimaryDark"
+            app:layout_constraintEnd_toEndOf="@+id/button_edit_note_ef"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/button_edit_note_ef"
+            app:layout_constraintTop_toBottomOf="@+id/button_edit_note_ef" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="32dp"
+            android:layout_marginTop="32dp"
+            android:text="Repition : "
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/spinner_edit_repeation_option"
+            app:layout_constraintEnd_toEndOf="@+id/button_select_time_ef"
+            app:layout_constraintTop_toBottomOf="@+id/button_select_time_ef" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>
+
+
